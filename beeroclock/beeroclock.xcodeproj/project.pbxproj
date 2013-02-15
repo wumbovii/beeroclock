@@ -23,6 +23,7 @@
 		9D7E208316CEC33500C1533E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E205E16CEC33400C1533E /* Foundation.framework */; };
 		9D7E208B16CEC33500C1533E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E208916CEC33500C1533E /* InfoPlist.strings */; };
 		9D7E208E16CEC33500C1533E /* beeroclockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E208D16CEC33500C1533E /* beeroclockTests.m */; };
+		9D7E209816CEC3F200C1533E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E209716CEC3F200C1533E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9D7E208A16CEC33500C1533E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9D7E208C16CEC33500C1533E /* beeroclockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beeroclockTests.h; sourceTree = "<group>"; };
 		9D7E208D16CEC33500C1533E /* beeroclockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beeroclockTests.m; sourceTree = "<group>"; };
+		9D7E209716CEC3F200C1533E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7E209816CEC3F200C1533E /* CoreLocation.framework in Frameworks */,
 				9D7E205D16CEC33400C1533E /* UIKit.framework in Frameworks */,
 				9D7E205F16CEC33400C1533E /* Foundation.framework in Frameworks */,
 				9D7E206116CEC33400C1533E /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		9D7E205016CEC33400C1533E = {
 			isa = PBXGroup;
 			children = (
+				9D7E209716CEC3F200C1533E /* CoreLocation.framework */,
 				9D7E206216CEC33400C1533E /* beeroclock */,
 				9D7E208616CEC33500C1533E /* beeroclockTests */,
 				9D7E205B16CEC33400C1533E /* Frameworks */,

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface BeerViewController : UIViewController
+{
+    CLLocationManager *locationManager;
+}
 
 @end
