@@ -10,7 +10,7 @@
 
 @implementation BeerViewController
 
-- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
@@ -35,6 +35,16 @@
        didFailWithError:(NSError *)error
 {
     NSLog(@"Could not find location: %@", error);
+}
+
+- (void)dealloc
+{
+    [locationManager setDelegate:nil];
+}
+
+- (IBAction)sendMessageToGroup:(id)sender
+{
+    //comment
 }
 
 @end

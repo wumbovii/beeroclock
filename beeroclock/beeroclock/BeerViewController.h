@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import <MessageUI/MessageUI.h>
 
 @interface BeerViewController : UIViewController
 {
     CLLocationManager *locationManager;
+    IBOutlet UITextField *groupMessage;
+    IBOutlet UIActivityIndicatorView *activityIndicator;
+    IBOutlet UIPickerView *groupPicker;
 }
+
+- (IBAction)sendMessageToGroup:(id)sender;
 
 @end
