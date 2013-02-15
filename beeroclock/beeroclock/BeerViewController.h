@@ -12,11 +12,15 @@
 #import <MessageUI/MessageUI.h>
 
 @interface BeerViewController : UIViewController
+    <CLLocationManagerDelegate, MFMessageComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 {
+    MFMessageComposeViewController *messageComposer;
     CLLocationManager *locationManager;
     IBOutlet UITextField *groupMessage;
     IBOutlet UIActivityIndicatorView *activityIndicator;
-    IBOutlet UIPickerView *groupPicker;
+    IBOutlet UITableView *groupTable;
+    NSString *selectedGroup;
+    NSArray *groups;
 }
 
 - (IBAction)sendMessageToGroup:(id)sender;
