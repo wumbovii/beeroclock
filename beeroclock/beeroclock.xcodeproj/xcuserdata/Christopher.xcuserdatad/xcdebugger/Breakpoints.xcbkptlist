@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "beeroclock/BeerViewController.m"
-         timestampString = "382664094.176172"
+         timestampString = "382668105.117714"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "79"
-         endingLineNumber = "79"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-sendMessageToGroup:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -23,6 +23,12 @@
     NSArray *groups;
 }
 
+@property (strong,nonatomic) IBOutlet UITextField *groupMessage;
+
 - (IBAction)sendMessageToGroup:(id)sender;
+
+- (IBAction)hideGroupMessageKeyboardOnReturn:(id)sender;
+
+- (IBAction)backgroundTouched:(id)sender;
 
 @end

@@ -10,6 +10,8 @@
 
 @implementation BeerViewController
 
+@synthesize groupMessage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -70,14 +72,26 @@
 
 - (IBAction)sendMessageToGroup:(id)sender
 {
-    NSLog(@"Button clicked!");
-
+    NSLog(@"Recipients are %@", selectedGroup);
+    NSLog(@"body is %@", groupMessage.text);
+ 
     if ([MFMessageComposeViewController canSendText] == YES) {
         //comment
-        messageComposer.recipients = [[NSArray alloc] initWithObjects:@"6507738461", nil];
-        messageComposer.body = @"Test body!";
+        messageComposer.recipients = [[NSArray alloc] initWithObjects:selectedGroup, nil];
+        messageComposer.body = groupMessage.text;
         [self presentViewController:messageComposer animated:YES completion:NULL];
     }
+}
+
+- (IBAction)hideGroupMessageKeyboardOnReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+
+- (IBAction)backgroundTouched:(id)sender
+{
+    [groupMessage resignFirstResponder];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
